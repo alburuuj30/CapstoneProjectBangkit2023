@@ -13,7 +13,7 @@ db = mysql.connector.connect(
 
 # konfigurasi Cloud Storage
 bucket_name = "upload-by-user"
-storage_client = storage.Client.from_service_account_json("/CapstoneProjectBangkit2023/config/travellensapp-fefd9f0826d5.json")
+storage_client = storage.Client.from_service_account_json("/CapstoneProjectBangkit2023/travellensapp-fefd9f0826d5.json")
 
 # Route untuk login
 @app.route('/login', methods=['POST'])
