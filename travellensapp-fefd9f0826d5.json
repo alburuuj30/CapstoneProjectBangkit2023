@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "travellensapp",
+  "private_key_id": "fefd9f0826d57bae51fdf95067d9cca8f4d68e9b",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvwIBADANBgkqhkiG9w0BAQEFAASCBKkwggSlAgEAAoIBAQDVOBg2S5H1MBjD\nUVu4my98XUmNOWX/FEdYGvtOwKkmu17Ik45G8lJbE8jpXuVIt5C6q5KNjXFRoFKy\n8Ty8gbvyK4t8D2Hm+6FQg1gaE/YoFZxUP2Rvi0zcif3ZZ3kX2D7MKkykwS6w79GN\nE14NhLo1FDhx/EJNR4+QR8Fc3ybPgjtfYDBN6Ieh9Neqpd4ovIDgYnsL/L412q6d\n9HPTBjXVbRxRXiuHbkBzDsat2w3leXA6K+Ral76qLXT8QGxWiNuz/JOjMpuj5dO4\nxRf+EwkoSb2tY7p+9u7JqzMo6h7XUnfBJvr8ZMWPouxa7yBGY17QGAJs87ld5+n2\nEXwtYwW1AgMBAAECggEACL917YMD4y7iJ9/70Y2lu5uqNl3vVjFTTK/tX/RInFsI\npFW60HoFsKXq/Xl+vRExohmtosV1q5cr0sVSAXFDMEg4FKge6Kv/Q384C03cBhX+\nOs36WsHjg+gyHuF/bDUw57h+j4M7iAKMMuu4qqOnmMuSa0l3FkDu3h5g4Q9owg+v\nHoP3aFAkF3uGwh5g0ZVG7xKbw1JW7g1wHp25Juv1hw4XstDpZMrYXOUSPOWaCXOK\n4mZ1YZWAcwf1ryM0ws+jGoiNBgv4uJM8ghx6qGAxCa7t9gOkm7nWQ2gjwfxCTIhb\nXl/9apK+PIJRHViLPkvubTnjPcsacrN/RPV7bjXPQQKBgQDwSlmHag3VlYZd/fw1\ncWwnofwtGvqePC9wg8uzODfSoNjZOOh4ClnbmkRw9ZRb4z4Log3AaaXr+tR033jY\nz61cOzZpgRDMmhzGsVCn9pVHzAEcUIVTcK0S+su5gJE2wo8mZgrt+UIackBCQRba\n1xCGBQBDxy9Lu/zawGWwAb1j4QKBgQDjKKmd1cpgVPwvqu+ckJYqp0ihgm389vPC\nX5zpvKRr1hbM911CmXHn3NvfUKw5yXbZuNpLGX+uO5k62MuVrub+m0nRFpCO9Vnv\nPkvSSE+WXq7Sr6iZGbPwGJbpHnvSL+X/vXUneWaqXGBuX7Jq1dSsmf+o+GhCXOm+\nwzjoPRxcVQKBgQDi53KPeshBjgbqLvLAjLBy5HW7KiTK006A0xPB0y5ziUv8I87x\nu+SKiKxkdqJ3+qgWWBrgPWNe6OdCzdvR8Jpl48xH6IayjjzqK3pcgW8J80yBLlAY\nMOheadGDBDMcILEIs4dSnPOdAZJIfipU0I1b4NEVL7wrqgLllpTvlVUAQQKBgQCw\noTqaZtVw6EQbkI+2LtsFGYQpSbDaZO+PcScivDMhQpwCDknu8j+Wqa4xy5nPaS7I\nBqt+f7o/MUppbo+GuTQWP4s7UI9hCbg/hjIQtXdlFgRcAIhZW5oFlCkr5S8kdWgi\n3h9NbWF+EExPJowl9FTlTO11ZoozJ+n9EfGa64G07QKBgQCqtaF4PsME53sbOXNM\nY7Di1EMxU/hES9HFO7aFrRXkaL03XF272oQ8HQcbP7comfFkLeJ6mBaiKZkhe3xZ\nZSS4fuiexdETvK3sd/AjycgZzgvF44hvQAwIH2wD70oXOwMyAg4XahuNNqP+JWij\n49w8onWn8dTRCU9mYGY80923GQ==\n-----END PRIVATE KEY-----\n",
+  "client_email": "storage-travellens@travellensapp.iam.gserviceaccount.com",
+  "client_id": "116957716835043017444",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/storage-travellens%40travellensapp.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}
