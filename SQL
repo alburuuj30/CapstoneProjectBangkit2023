@@ -1,0 +1,19 @@
+Code SQL Database Table User
+---------------------------------------------------------
+CREATE TABLE User (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  username VARCHAR(50) NOT NULL,
+  password VARCHAR(255) NOT NULL,
+  email VARCHAR(100) NOT NULL,
+  created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+Code SQL Database Table PredictiveResults / Hasil Prediksi
+--------------------------------------------------------
+CREATE TABLE PredictiveResults (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  landmark_name VARCHAR(100) NOT NULL,
+  location VARCHAR(100) NOT NULL,
+  ticket_price DECIMAL(10, 2) NOT NULL,
+  created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
