@@ -68,7 +68,7 @@ def register():
 # Route untuk upload gambar by user
 @app.route('/upload', methods=['POST'])
 def upload():
-    file = request.files['file']
+    file = request.files['file']#ganti 'file' sesuai dengan namanya
     if file:
         filename = file.filename
         blob = storage_client.bucket(bucket_name).blob(filename)
