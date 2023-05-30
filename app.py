@@ -65,6 +65,34 @@ def register():
     # Registrasi berhasil, kirimkan pesan berhasil
     return jsonify({'message': 'Registrasi berhasil!'})
 
+# Route untuk edit profile
+@app.route('/profile/<int:user_id>', methods=['PUT'])
+def update_profile(user_id):
+    cursor = db.cursor()
+
+    # Mendapatkan data yang akan diupdate dari body permintaan
+    data = request.get_json()
+    new_username = data.get('username')
+    new_email = data.get('email')
+    new_address = data.get('address')
+    new_phone = data.get('phone')
+    new_photo = data.get('photo')
+
+    # Mengecek apakah user dengan user_id tertentu ada di database
+    query_check_user = "SELECT * FROM users WHERE id = %s"
+    cursor.execute(query_check_user, (user_id,))
+    user = cursor.fetchone()
+    if not user:
+        return jsonify({'message': 'User not found'}), 404
+
+    # Mengupdate data pengguna dalam database
+    query_update_user = "UPDATE users SET username = %s, email = %s, address = %s, phone = %s, photo = %s WHERE id = %s"
+    cursor.execute(query_update_user, (new_username, new_email, new_address, new_phone, new_photo, user_id))
+    db.commit()
+
+    return jsonify({'message': 'Profile updated successfully'})
+
+
 # Route untuk upload gambar by user
 @app.route('/upload', methods=['POST'])
 def upload():
