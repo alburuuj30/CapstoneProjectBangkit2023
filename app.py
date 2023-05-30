@@ -79,14 +79,14 @@ def update_profile(user_id):
     new_photo = data.get('photo')
 
     # Mengecek apakah user dengan user_id tertentu ada di database
-    query_check_user = "SELECT * FROM users WHERE id = %s"
+    query_check_user = "SELECT * FROM user WHERE id = %s"
     cursor.execute(query_check_user, (user_id,))
     user = cursor.fetchone()
     if not user:
         return jsonify({'message': 'User not found'}), 404
 
     # Mengupdate data pengguna dalam database
-    query_update_user = "UPDATE users SET username = %s, email = %s, address = %s, phone = %s, photo = %s WHERE id = %s"
+    query_update_user = "UPDATE user SET username = %s, email = %s, address = %s, phone = %s, photo = %s WHERE id = %s"
     cursor.execute(query_update_user, (new_username, new_email, new_address, new_phone, new_photo, user_id))
     db.commit()
 
