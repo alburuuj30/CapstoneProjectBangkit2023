@@ -13,8 +13,8 @@ db = mysql.connector.connect(
 )
 
 # Konfigurasi Google Cloud Storage
-storage_client = storage.Client.from_service_account_json('credentials.json') #ganti
-bucket_name = 'your-bucket-name' #ganti
+storage_client = storage.Client.from_service_account_json('access-user-photo-data-4299fe680af4.json')
+bucket_name = 'foto-user-travellens'
 
 # Route untuk login
 @app.route('/login', methods=['POST'])
