@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/homeFragment"
+        android:orderInCategory="100"
+        android:title="Home"
+        android:icon="@drawable/baseline_home_24" />
+
+    <item
+        android:id="@+id/historiFragment"
+        android:orderInCategory="100"
+        android:title="Camera"
+        android:icon="@drawable/baseline_photo_camera_24" />
+
+
+    <item
+        android:id="@+id/whistlistFragment"
+        android:icon="@drawable/baseline_love_24"
+        android:orderInCategory="100"
+        android:title="Wishlist" />
+
+    <item
+        android:id="@+id/profileFragment"
+        android:icon="@drawable/profile"
+        android:orderInCategory="100"
+        android:title="Profile" />
+
+</menu>

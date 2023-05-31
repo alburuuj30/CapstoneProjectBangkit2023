@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.wishlist.WishListFragment">
+
+    <TextView
+        android:id="@+id/headerFavorit"
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Wishlist"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:textSize="28sp"
+        android:layout_marginStart="20dp"
+        />
+
+    <SearchView
+        android:id="@+id/etSearchLandMark"
+        android:layout_width="370dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/headerFavorit"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/custom_input"
+        android:drawableEnd="@drawable/search_normal"
+        android:drawablePadding="12dp"
+        android:ems="10"
+        android:queryHint="Cari landmark"
+        android:iconifiedByDefault="false"
+        tools:ignore="Autofill,TextFields" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:id="@+id/rvFavorit"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="15dp"
+        android:layout_below="@id/etSearchLandMark"
+        tools:listitem="@layout/item_list" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone"/>
+
+</RelativeLayout>

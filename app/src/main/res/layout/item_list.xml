@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    android:id="@+id/card"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="3dp"
+    app:cardPreventCornerOverlap="false"
+    android:layout_marginStart="2dp"
+    android:layout_marginEnd="2dp"
+    android:layout_marginBottom="15dp"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp">
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/baseline_love_24"
+            android:layout_alignParentEnd="true"
+            android:background="@color/white"
+            />
+
+        <TextView
+            android:layout_toRightOf="@id/images"
+            android:id="@+id/txtNama"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Monumen Nasional"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:paddingStart="20dp"
+            android:layout_marginTop="29dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Monumen nasional adalah....."
+            android:layout_below="@id/txtNama"
+            android:layout_toRightOf="@id/images"
+            android:layout_marginTop="5dp"
+            android:textSize="15sp"
+            android:textColor="#767676"
+            android:paddingStart="20dp"
+            />
+
+        <ImageView
+            android:id="@+id/images"
+            android:layout_width="80dp"
+            android:layout_height="140dp"
+            android:src="@drawable/ic_launcher_background"
+            android:scaleType="fitXY"
+            />
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
