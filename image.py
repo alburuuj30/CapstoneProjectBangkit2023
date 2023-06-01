@@ -5,8 +5,8 @@ from google.cloud import storage
 image_blueprint = Blueprint('image', __name__)
 
 # Konfigurasi Google Cloud Storage
-BUCKET_NAME = 'nama_bucket'
-CLOUD_STORAGE_URL = 'https://storage.googleapis.com'
+BUCKET_NAME = ''
+CLOUD_STORAGE_URL = ''
 
 # Fungsi untuk mengunggah gambar ke Cloud Storage
 @image_blueprint.route('/upload', methods=['POST'])
@@ -31,7 +31,7 @@ def upload_image():
     image_url = f"{CLOUD_STORAGE_URL}/{BUCKET_NAME}/{blob.name}"
 
     # Lakukan pemrosesan gambar menggunakan model ML
-    # ...
+    
     # Implementasikan logika pemrosesan gambar di sini
 
     # Contoh: Mengembalikan URL gambar yang diunggah dan hasil identifikasi dari model
