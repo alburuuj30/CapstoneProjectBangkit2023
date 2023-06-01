@@ -17,7 +17,6 @@ def upload_image():
     
     image_file = request.files['image']
     
-    # Periksa apakah ada file yang dipilih
     if image_file.filename == '':
         return jsonify({'error': 'No file selected'}), 400
     
